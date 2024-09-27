@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sistema Hospitalar Completo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema Hospitalar Completo</h1>
+        <p>ERP para hospitais e clínicas com Prontuário Eletrônico e Digital</p>
+    </header>
+
+    <div id="login-screen">
+        <h2>Login</h2>
+        <button id="doctor-btn">Sou Médico</button>
+        <button id="patient-btn">Sou Paciente</button>
+    </div>
+
+    <div id="main-content" style="display: none;">
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre o Sistema</a></li>
+                <li><a href="#modules">Módulos</a></li>
+                <li><a href="#inventory">Gestão de Estoque</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+
+        <section id="about">
+            <h2>Sobre o Sistema</h2>
+            <p>Nossa plataforma foi desenvolvida para atender as necessidades diárias de hospitais e clínicas, abrangendo diversas especialidades médicas.</p>
+            <h3>Prontuário Único de Paciente</h3>
+            <p>Mantenha o histórico completo de cada paciente, facilitando o fluxo de dados entre os setores e integrando todos os processos. Nossa plataforma garante uma gestão eficiente das informações clínicas, assistenciais e financeiras, aprimorando a segurança e o atendimento ao paciente.</p>
+        </section>
+
+        <section id="modules">
+            <h2>Módulos do Sistema</h2>
+            <ul>
+                <li>Prontuário Eletrônico</li>
+                <li>Gestão de Estoque</li>
+                <li>Faturamento</li>
+                <li>Compras e Manutenção</li>
+            </ul>
+            <h3>Integração Total</h3>
+            <p>Ao registrar um atendimento, os dados ficam automaticamente disponíveis para uso em outros módulos, como prontuário, estoque e faturamento.</p>
+        </section>
+
+        <section id="inventory">
+            <h2>Gestão de Estoque</h2>
+            <form id="inventory-form">
+                <label for="item-name">Nome do Item:</label>
+                <input type="text" id="item-name" name="item-name" required>
+
+                <label for="item-quantity">Quantidade:</label>
+                <input type="number" id="item-quantity" name="item-quantity" required>
+
+                <button type="submit">Adicionar Item</button>
+            </form>
+
+            <h3>Itens no Estoque</h3>
+            <ul id="inventory-list"></ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contato</h2>
+            <form id="contact-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Sistema Hospitalar Completo</p>
+        </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
